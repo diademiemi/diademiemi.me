@@ -1,0 +1,309 @@
+ansible_content:
+  collections:
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/firefox
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.firefox
+    name: diademiemi.firefox
+    roles:
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.firefox/actions/workflows/ansible-role-install.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.firefox/actions/workflows/ansible-role-install.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.firefox/tree/main/roles/install
+      name: diademiemi.firefox.install
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/foreman
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.foreman
+    name: diademiemi.foreman
+    roles:
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.foreman/tree/main/roles/configure
+      name: diademiemi.foreman.configure
+      status: Unmaintained
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.foreman/tree/main/roles/configure_katello
+      name: diademiemi.foreman.configure_katello
+      status: Unmaintained
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.foreman/tree/main/roles/install
+      name: diademiemi.foreman.install
+      status: Unmaintained
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.foreman/tree/main/roles/install_capsule
+      name: diademiemi.foreman.install_capsule
+      status: Unmaintained
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.foreman/tree/main/roles/smart_proxy
+      name: diademiemi.foreman.smart_proxy
+      status: Unmaintained
+    status: Unmaintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/hashicorp
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp
+    name: diademiemi.hashicorp
+    roles:
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp/actions/workflows/ansible-role-terraform.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp/actions/workflows/ansible-role-terraform.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp/tree/main/roles/terraform
+      name: diademiemi.hashicorp.terraform
+      status: Maintained
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp/actions/workflows/ansible-role-vagrant.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp/actions/workflows/ansible-role-vagrant.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.hashicorp/tree/main/roles/vagrant
+      name: diademiemi.hashicorp.vagrant
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/jellyfin
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin
+    name: diademiemi.jellyfin
+    roles:
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin/actions/workflows/ansible-role-install.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin/actions/workflows/ansible-role-install.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin/tree/main/roles/install
+      name: diademiemi.jellyfin.install
+      status: Maintained
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin/actions/workflows/ansible-role-intel_arc.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin/actions/workflows/ansible-role-intel_arc.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jellyfin/tree/main/roles/intel_arc
+      name: diademiemi.jellyfin.intel_arc
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/jetbrains
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains
+    name: diademiemi.jetbrains
+    roles:
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-android_studio.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-android_studio.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/android_studio
+      name: diademiemi.jetbrains.android_studio
+      status: Maintained
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-clion.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-clion.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/clion
+      name: diademiemi.jetbrains.clion
+      status: Maintained
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/common
+      name: diademiemi.jetbrains.common
+      status: Library role
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-goland.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-goland.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/goland
+      name: diademiemi.jetbrains.goland
+      status: Maintained
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-idea.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-idea.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/idea
+      name: diademiemi.jetbrains.idea
+      status: Maintained
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-pycharm.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-pycharm.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/pycharm
+      name: diademiemi.jetbrains.pycharm
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/kubernetes_utils
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.kubernetes_utils
+    name: diademiemi.kubernetes_utils
+    roles:
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.kubernetes_utils/tree/main/roles/selfsigned_ssl
+      name: diademiemi.kubernetes_utils.selfsigned_ssl
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/python
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.python
+    name: diademiemi.python
+    roles:
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.python/actions/workflows/ansible-role-pip.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.python/actions/workflows/ansible-role-pip.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.python/tree/main/roles/pip
+      name: diademiemi.python.pip
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/utils
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.utils
+    name: diademiemi.utils
+    roles:
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.utils/actions/workflows/ansible-role-nginx_basic_configs.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.utils/actions/workflows/ansible-role-nginx_basic_configs.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.utils/tree/main/roles/nginx_basic_configs
+      name: diademiemi.utils.nginx_basic_configs
+      status: Maintained
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.utils/actions/workflows/ansible-role-selfsigned_ssl.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.utils/actions/workflows/ansible-role-selfsigned_ssl.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.utils/tree/main/roles/selfsigned_ssl
+      name: diademiemi.utils.selfsigned_ssl
+      status: Maintained
+    status: Maintained
+  - galaxy_url: https://galaxy.ansible.com/diademiemi/diademiemi.vm_utils
+    gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.diademiemi.vm_utils
+    name: diademiemi.vm_utils
+    roles:
+    - ci_badge: ''
+      ci_url: ''
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils/tree/main/roles/vyos_qcow2_image
+      name: diademiemi.vm_utils.vyos_qcow2_image
+      status: Maintained
+    status: Maintained
+  roles:
+  - ci_badge: https://github.com/diademiemi/ansible_role_discord/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_discord/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/discord
+    gh_url: https://github.com/diademiemi/ansible_role_discord
+    name: diademiemi.discord
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_docker/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_docker/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/docker
+    gh_url: https://github.com/diademiemi/ansible_role_docker
+    name: diademiemi.docker
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_epel/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_epel/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/epel
+    gh_url: https://github.com/diademiemi/ansible_role_epel
+    name: diademiemi.epel
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_flatpak/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_flatpak/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/flatpak
+    gh_url: https://github.com/diademiemi/ansible_role_flatpak
+    name: diademiemi.flatpak
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_github_cli/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_github_cli/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/github_cli
+    gh_url: https://github.com/diademiemi/ansible_role_github_cli
+    name: diademiemi.github_cli
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_gitlab_cli/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_gitlab_cli/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/gitlab_cli
+    gh_url: https://github.com/diademiemi/ansible_role_gitlab_cli
+    name: diademiemi.gitlab_cli
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_helm/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_helm/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/helm
+    gh_url: https://github.com/diademiemi/ansible_role_helm
+    name: diademiemi.helm
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_k3s/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_k3s/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/k3s
+    gh_url: https://github.com/diademiemi/ansible_role_k3s
+    name: diademiemi.k3s
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_mailcow/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_mailcow/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/mailcow
+    gh_url: https://github.com/diademiemi/ansible_role_mailcow
+    name: diademiemi.mailcow
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_openzfs/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_openzfs/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/openzfs
+    gh_url: https://github.com/diademiemi/ansible_role_openzfs
+    name: diademiemi.openzfs
+    status: Maintained
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/protonvpn
+    gh_url: https://github.com/diademiemi/ansible_role_protonvpn
+    name: diademiemi.protonvpn
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_rke2/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_rke2/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/rke2
+    gh_url: https://github.com/diademiemi/ansible_role_rke2
+    name: diademiemi.rke2
+    status: Maintained
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/rpi_imager
+    gh_url: https://github.com/diademiemi/ansible_role_rpi_imager
+    name: diademiemi.rpi_imager
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_rust/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_rust/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/rust
+    gh_url: https://github.com/diademiemi/ansible_role_rust
+    name: diademiemi.rust
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_solaar/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_solaar/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/solaar
+    gh_url: https://github.com/diademiemi/ansible_role_solaar
+    name: diademiemi.solaar
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_syncthing/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_syncthing/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/syncthing
+    gh_url: https://github.com/diademiemi/ansible_role_syncthing
+    name: diademiemi.syncthing
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_vscode/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_vscode/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/vscode
+    gh_url: https://github.com/diademiemi/ansible_role_vscode
+    name: diademiemi.vscode
+    status: Maintained
+  - ci_badge: https://github.com/diademiemi/ansible_role_wireguard/actions/workflows/molecule.yml/badge.svg
+    ci_url: https://github.com/diademiemi/ansible_role_wireguard/actions/workflows/molecule.yml
+    galaxy_url: https://galaxy.ansible.com/diademiemi/wireguard
+    gh_url: https://github.com/diademiemi/ansible_role_wireguard
+    name: diademiemi.wireguard
+    status: Maintained
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/vagrant_libvirt
+    gh_url: https://github.com/diademiemi/ansible_role_vagrant_libvirt
+    name: diademiemi.vagrant_libvirt
+    status: Deprecated See diademiemi.hashicorp
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/msteams
+    gh_url: https://github.com/diademiemi/ansible_role_msteams
+    name: diademiemi.msteams
+    status: Deprecated
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/joplin_desktop
+    gh_url: https://github.com/diademiemi/ansible_role_joplin_desktop
+    name: diademiemi.joplin_desktop
+    status: Deprecated
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/intellij_idea
+    gh_url: https://github.com/diademiemi/ansible_role_intellij_idea
+    name: diademiemi.intellij_idea
+    status: Deprecated See diademiemi.jetbrains
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/freetube
+    gh_url: https://github.com/diademiemi/ansible_role_freetube
+    name: diademiemi.freetube
+    status: Deprecated
+  - ci_badge: ''
+    ci_url: ''
+    galaxy_url: https://galaxy.ansible.com/diademiemi/android_studio
+    gh_url: https://github.com/diademiemi/ansible_role_android_studio
+    name: diademiemi.android_studio
+    status: Deprecated See diademiemi.jetbrains
+default:
+  author: diademiemi
+  collection_galaxy_url: https://galaxy.ansible.com/{author}/{name}
+  collection_git_url: https://github.com/{author}/{collection_repo_name}
+  collection_repo_name: ansible_collection_{author}.{name}
+  collection_role_ci_badge_url: '{git_url}/actions/workflows/ansible-role-{name}.yml/badge.svg'
+  collection_role_ci_url: '{git_url}/actions/workflows/ansible-role-{name}.yml'
+  role_ci_badge_url: '{git_url}/actions/workflows/molecule.yml/badge.svg'
+  role_ci_url: '{git_url}/actions/workflows/molecule.yml'
+  role_galaxy_url: https://galaxy.ansible.com/{author}/{name}
+  role_git_url: https://github.com/{author}/{role_repo_name}
+  role_repo_name: ansible_role_{name}

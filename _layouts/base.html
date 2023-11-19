@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            {% for link in site.data.navigation.links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- Main content -->
+    <div class="container">
+        {{ content }}
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab" onclick="toggleMobileMenu()">☰</div>
+
+    <!-- Include your JavaScript file -->
+    <script src="{{ '/assets/js/fab.js' | relative_url }}"></script>
+    <script>
+        var navigationLinks = {{ site.data.navigation.links | jsonify }};
+    </script>
+</body>
+</html>

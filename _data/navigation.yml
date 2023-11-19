@@ -1,0 +1,11 @@
+links:
+  - title: Homepage
+    url: /
+  - title: Projects
+    url: /projects
+  - title: Blog
+    url: /blog
+  - title: Ansible
+    url: /ansible
+  - title: GitHub
+    url: https://github.com/diademiemi

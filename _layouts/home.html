@@ -1,0 +1,30 @@
+---
+layout: base
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ansible Content</title>
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+
+    <!-- Specific content for the home page -->
+    <div class="home-content">
+        <h1 class="main-title">{{ page.title }}</h1>
+        <p class="subtitle">{{ page.subtitle }}</p>
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+
+    <div class="webring">
+        <a href="https://webring.queercoded.dev/prev?source=diademiemi.me"><img src="{{ '/assets/img/webring-prev.png' | relative_url }}" alt="Previous" width="31" height="31"></a>
+        <a href="https://webring.queercoded.dev"><img src="{{ '/assets/img/webring-banner.gif' | relative_url }}" alt="Webring" width="88" height="31"></a>
+        <a href="https://webring.queercoded.dev/next?source=diademiemi.me"><img src="{{ '/assets/img/webring-next.png' | relative_url }}" alt="Next" width="31" height="31"></a>
+    </div>
+    
+</body>

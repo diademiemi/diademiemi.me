@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Agave';
+    src: url('../fonts/AgaveNerdFont-Regular.ttf') format('truetype');
+}
+
+.main-title {
+    font-size: 4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Example drop shadow
+    // Other styles...
+}
+
+body {
+    background-color: #202026;
+    color: #aaaaff;
+    font-family: 'Agave', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #141418;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    overflow: auto;
+}
+
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+body, p, li, a { // General text elements
+    font-size: 1.2em; // Increase the general font size by 1.5x
+    // ... other styles if needed ...
+}
+
+.sidebar-list li a {
+    display: block;
+    color: #aaaaff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar-list li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.container {
+    margin-left: 200px;
+    padding: 1px 16px;
+    text-align: center;
+}
+
+.content {
+    text-align: left;
+    margin-top: 1em;
+}
+
+/* Styles for the Floating Action Button */
+.fab {
+    z-index: 1000; /* Ensures the FAB is above other content */
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position relative to the viewport */
+    bottom: 3vw; /* Distance from the bottom of the viewport */
+    right: 3vw; /* Distance from the right of the viewport */
+    width: 10vw; /* Adjust based on desired size */
+    height: 10vw; /* Adjust based on desired size */
+    background-color: #141418; /* Sidebar's color */
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    overflow: hidden; /* Ensures content doesn't overflow during transition */
+    cursor: pointer;
+}
+
+.fab .fab-close {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent; /* No background color */
+}
+
+.fab.expanded {
+    border-radius: 15px;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    bottom: 80px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fab.expanded a {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .fab {
+        display: flex;
+    }
+    .sidebar {
+        display: none;
+    }
+    .container {
+        margin-left: 0;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}

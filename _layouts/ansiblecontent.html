@@ -1,0 +1,153 @@
+---
+layout: base
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansible Content</title>
+    <link rel="stylesheet" href="{{ '/assets/css/ansiblecontent.css' | relative_url }}">
+</head>
+<body>
+    <!-- Active Roles -->
+    <h2 class="table-h2">Active Roles</h2>
+    <table border="1" class="table table-active-roles">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>CI Badge</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for role in site.data.ansible-content.ansible_content.roles %}
+            {% unless role.status contains "Deprecated" %}
+            <tr>
+                <td><a href="{{ role.gh_url }}">{{ role.name }}</a></td>
+                <td>{{ role.status }}</td>
+                <td>
+                    {% if role.ci_badge != "" %}
+                    <a href="{{ role.ci_url }}"><img src="{{ role.ci_badge }}" alt="CI Badge"></a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endunless %}
+            {% endfor %}
+        </tbody>
+    </table>
+    <!-- Active Collections -->
+    <h2 class="table-h2">Active Collections</h2>
+    <table border="1" class="table table-active-collections">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Roles</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for collection in site.data.ansible-content.ansible_content.collections %}
+            {% unless collection.status contains "Deprecated" %}
+            {% assign role_count = collection.roles | size %}
+            {% assign collection_prefix = collection.name | append: '.' %}
+            {% assign rowspan_value = role_count | plus: 1 %}
+                {% if role_count > 0 %}
+                <tr>
+                    <td rowspan="{{ rowspan_value }}"><a href="{{ collection.gh_url }}">{{ collection.name }}</a></td>
+                    <td rowspan="{{ rowspan_value }}">{{ collection.status }}</td>
+                </tr>
+                {% for role in collection.roles %}
+                <tr>
+                    {% if role.ci_badge != "" %}
+                    <td><a href="{{ role.gh_url }}">{{ role.name | remove: collection_prefix }}</a> <a href="{{ role.ci_url }}"><img src="{{ role.ci_badge }}" alt="CI Badge"></a></td>
+                    {% else %}
+                    <td><a href="{{ role.gh_url }}">{{ role.name | remove: collection_prefix }}</a></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr>
+                    <td><a href="{{ collection.gh_url }}">{{ collection.name }}</a></td>
+                    <td>{{ collection.status }}</td>
+                    <td>No roles</td>
+                </tr>
+                {% endif %}
+            {% endunless %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Deprecated Roles -->
+    <h2 class="table-h2">Deprecated Roles</h2>
+    <table border="1" class="table table-deprecated table-deprecated-roles">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Comment</th>
+                <th>CI Badge</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for role in site.data.ansible-content.ansible_content.roles %}
+            {% if role.status contains "Deprecated" %}
+            <tr>
+                <td><a href="{{ role.gh_url }}">{{ role.name }}</a></td>
+                <td>{{ role.status | remove: 'Deprecated' }}</td>
+                <td>
+                    {% if role.ci_badge != "" %}
+                    <a href="{{ role.ci_url }}"><img src="{{ role.ci_badge }}" alt="CI Badge"></a>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Deprecated Collections -->
+    <h2 class="table-h2">Deprecated Collections</h2>
+    <table border="1" class="table table-deprecated table-deprecated-collections">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Roles</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for collection in site.data.ansible-content.ansible_content.collections %}
+            {% if collection.status contains "Deprecated" %}
+            {% assign role_count = collection.roles | size %}
+            {% assign collection_prefix = collection.name | append: '.' %}
+            {% assign rowspan_value = role_count | plus: 1 %}
+                {% if role_count > 0 %}
+                <tr>
+                    <td rowspan="{{ rowspan_value }}"><a href="{{ collection.gh_url }}">{{ collection.name }}</a></td>
+                    <td rowspan="{{ rowspan_value }}">{{ collection.status | remove: 'Deprecated' }}</td>
+                </tr>
+                {% for role in collection.roles %}
+                <tr>
+                    {% if role.ci_badge != "" %}
+                    <td><a href="{{ role.gh_url }}">{{ role.name | remove: collection_prefix }}</a> <a href="{{ role.ci_url }}"><img src="{{ role.ci_badge }}" alt="CI Badge"></a></td>
+                    {% else %}
+                    <td><a href="{{ role.gh_url }}">{{ role.name | remove: collection_prefix }}</a></td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+                {% else %}
+                <tr>
+                    <td><a href="{{ collection.gh_url }}">{{ collection.name }}</a></td>
+                    <td>{{ collection.status }}</td>
+                    <td>No roles</td>
+                </tr>
+                {% endif %}
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+</html>

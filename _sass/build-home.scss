@@ -1,0 +1,20 @@
+/* Base styles for webring - centered at the bottom */
+.webring {
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Desktop-specific styles */
+@media (min-width: 768px) { /* Adjust the breakpoint as needed */
+    .webring {
+        /* Adjust for sidebar width on desktop */
+        /* Example: if sidebar width is 200px */
+        transform: translateX(calc(-50% + 100px)); /* Adjust the 100px based on your actual sidebar width */
+    }
+}
