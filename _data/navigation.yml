@@ -1,11 +1,15 @@
 links:
-  - title: Homepage
+  - title: 󰋜 &nbsp;Homepage
     url: /
-  - title: Projects
-    url: /projects
-  - title: Blog
+  - title:  &nbsp;About&nbsp;Me  # Put a non-breaking space between words
+    url: /about
+  - title: 󰗚 &nbsp;Blog
     url: /blog
-  - title: Ansible
-    url: /ansible
-  - title: GitHub
+  - title:  &nbsp;Projects
+    url: /projects
+  - title: "&nbsp;󱂚&nbsp;Ansible"
+    url: /projects/ansible
+  # - title: Links
+  #   url: /links
+  - title: " &nbsp;GitHub"
     url: https://github.com/diademiemi

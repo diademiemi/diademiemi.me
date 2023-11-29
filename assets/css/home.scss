@@ -1,4 +1,109 @@
 ---
 ---
 
-@import "build-home";
+.container {
+    // padding: 1px 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap as needed */
+    justify-content: space-between;
+}
+
+.home-title {
+    margin-bottom: 0em; /* Reduced bottom margin */
+    margin-top: 0.5em; /* Increased top margin */
+    font-size: 5vw; /* Large size for the title */
+}
+
+.home-subtitle {
+    font-size: 1.5em; /* Smaller size for the date */
+    color: #666; /* Optional: color for the date */
+    margin-top: 0em; /* Reduced top margin */
+    margin-bottom: 2vw;
+}
+
+.home-content {
+    margin-left: calc((100vw - 90vw) / 2); /* Adjust for the sidebar's width */
+    margin-right: calc((100vw - 90vw) / 2);
+    text-align: left; /* Keep the text left-aligned */
+    /* Other styles if needed */
+}
+
+@media (min-width: 1024px) { /* Assuming sidebar is visible from this breakpoint */
+    .container {
+        margin-left: 150px; /* Adjust based on sidebar width */
+    }
+
+    .code-block, .text-block {
+        max-width: 45%;
+        margin-right: 10px; /* Add some space between blocks */
+    }
+}
+
+
+/* Responsive design for mobile */
+@media (max-width: 1024px) {
+    .home-content {
+        max-width: 90%;
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.code-block {
+    background-color: #141418;
+    border: 1px solid #060606;
+    border-left: 3px solid #aaaaff;
+    color: #ffffff;
+    font-family: monospace;
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+    max-width: 45%; /* Adjust as needed */
+    overflow: auto;
+    padding: 0.3em 0.8em;
+    word-wrap: break-word;
+    font-size: 1.2vw;
+}
+
+.text-block {
+    /* font-size: 1.4vw; */
+    margin-left: 0;
+    max-width: 45%; /* Adjust as needed */
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1024px) { /* Adjust the breakpoint as needed */
+    .code-block, .text-block {
+        flex-basis: 100%;
+        max-width: 100%;
+        font-size: 2.9vw; /* Adjust font size for smaller screens */
+    }
+}
+
+
+/* Base styles for webring - centered at the bottom */
+.webring {
+    position: fixed;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Desktop-specific styles */
+@media (min-width: 1024px) { /* Adjust the breakpoint as needed */
+    .webring {
+        /* Adjust for sidebar width on desktop */
+        /* Example: if sidebar width is 200px */
+        transform: translateX(calc(-50% + 100px)); /* Adjust the 100px based on your actual sidebar width */
+    }
+}

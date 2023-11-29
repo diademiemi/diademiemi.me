@@ -1,7 +1,5 @@
-@font-face {
-    font-family: 'Agave';
-    src: url('../fonts/AgaveNerdFont-Regular.ttf') format('truetype');
-}
+---
+---
 
 .main-title {
     font-size: 4em;
@@ -11,12 +9,31 @@
     // Other styles...
 }
 
+@font-face {
+    font-family: 'Agave';
+    src: url('../fonts/AgaveNerdFont-Regular.ttf') format('truetype');
+}
+
+
 body {
     background-color: #202026;
     color: #aaaaff;
     font-family: 'Agave', Arial, sans-serif;
     margin: 0;
     display: flex;
+}
+
+a, /* Styles for links within the content */
+a:visited { /* Styles for visited links */
+    color: #c9caff; /* Desired link color */
+    text-decoration: none; /* Removes underline, optional */
+}
+
+a:hover,
+a:focus,
+a:active { /* Styles for links on hover, focus, and active states */
+    color: #7066af; /* Maintains the same color on hover, focus, and active states */
+    text-decoration: underline; /* Underline on hover, focus, and active, optional */
 }
 
 .sidebar {
@@ -32,7 +49,7 @@ body {
     padding: 0;
 }
 
-body, p, li, a { // General text elements
+body, p, li { // General text elements
     font-size: 1.2em; // Increase the general font size by 1.5x
     // ... other styles if needed ...
 }
@@ -99,11 +116,12 @@ body, p, li, a { // General text elements
 
 .fab.expanded {
     border-radius: 15px;
-    width: 200px;
+    width: 80vw;
     height: auto;
-    padding: 20px;
+    // padding: 20px;
     bottom: 80px;
-    right: 20px;
+    // left: 10vw;
+    right: 7vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -115,7 +133,7 @@ body, p, li, a { // General text elements
     text-decoration: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .fab {
         display: flex;
     }

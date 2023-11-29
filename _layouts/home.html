@@ -8,14 +8,13 @@ layout: base
     <meta charset="UTF-8">
     <title>Ansible Content</title>
     <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 <body>
 
     <!-- Specific content for the home page -->
-    <div class="home-content">
-        <h1 class="main-title">{{ page.title }}</h1>
-        <p class="subtitle">{{ page.subtitle }}</p>
+    <div class="home-content container">
+        <h1 class="home-title">{{ page.title }}</h1>
+        <p class="home-subtitle">{{ page.subtitle }}</p>
         <div class="content">
             {{ content }}
         </div>

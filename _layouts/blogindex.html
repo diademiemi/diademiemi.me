@@ -1,0 +1,43 @@
+---
+layout: base
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}">
+</head>
+<body>
+    <header class="blog-header">
+        <a href="/blog/tags/games" class="category-link">Games</a>
+        <a href="/blog/" class="category-link">All</a>
+        <a href="/blog/tags/tech" class="category-link">Tech</a>
+    </header>
+
+    <div class="blog-container">
+        {% if paginator.posts.size > 0 %}
+            {% for post in paginator.posts %}
+            <a href="{{ post.url }}" class="blog-post-link">
+                <div class="blog-post-card">
+                    <h2 class="blog-post-title">{{ post.title }}</h2>
+                    <div class="blog-post-content">
+                        <p>{{ post.excerpt }}</p>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        {% else %}
+            <p class="no-posts">No posts available.</p>
+        {% endif %}
+    </div>
+    <!-- Pagination -->
+    <ul class="pagination">
+        {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path }}">Next</a></li>
+        {% endif %}
+    </ul>
+</body>
+</html>

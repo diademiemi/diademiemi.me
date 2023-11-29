@@ -1,0 +1,47 @@
+---
+layout: home
+title: diademiemi
+tabtitle: diademiemi | Home
+subtitle: they/them, she/her
+---
+
+<html>
+<body>
+    <div class="container-flex">
+        <div class="text-block">
+            <p>Hi! You may know me as Emilia, Jasmine or just my username "diademiemi"!</p>
+            {% assign birth_date = "2004-11-04" | date: "%s" %}
+            {% assign today = site.time | date: "%s" %}
+            {% assign age = today | minus: birth_date | divided_by: 31556952 %}
+            <p>I'm a {{ age }} year old nerd from the Netherlands!</p>
+            <p>My interests are DevOps tools like Ansible, Terraform and Kubernetes. I'm currently working as DevOps Engineer, where I work mostly with Linux servers and automating them</p>
+            <p>My hobbies are 3D Printing, coding and gaming. You'll find me apply what I learn to my hobbies too!</p>
+            <p>Check out what I do on my <a href="/blog">blog</a> or <a href="/projects">projects</a> page!</p>
+        </div>
+        <div class="code-block">
+            <div markdown="1">
+{% highlight kotlin %}
+object Me {
+    val names = arrayOf(
+        "Jasmine", "Emilia")
+
+    val pronouns = arrayOf(
+        "They/Them", "She/Her")
+
+    val tz = TimeZone.
+        getTimeZone("Europe/Amsterdam")
+
+    fun pronounceGIF(): String {
+        val pronunciations = arrayOf(
+            "χɪf", "Gif", "Jif", "Yif")
+
+        return pronunciations[Random()
+            .nextInt(pronunciations.size)]
+    }
+}
+{% endhighlight %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

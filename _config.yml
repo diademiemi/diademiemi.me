@@ -19,16 +19,36 @@
 # in the templates via {{ site.myvariable }}.
 
 title: diademiemi
-description: A personal website by DiaDemiEmi
+description: A personal website by diademiemi
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: diademiemi
+github_username:  diademiemi
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
+
+pagination:
+  enabled: true
+  per_page: 9
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+
+# collections_dir: collections
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  blog:
+    output: true
+    permalink: /blog/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,5 +1,23 @@
 ---
-layout: default
+layout: base
 ---
 
-{{ content }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ansible Content</title>
+    <link rel="stylesheet" href="{{ '/assets/css/default.css' | relative_url }}">
+</head>
+<body>
+
+    <!-- Specific content for the default page -->
+    <div class="default-content container">
+        <h1 class="default-title">{{ page.title }}</h1>
+        <p class="default-subtitle">{{ page.subtitle }}</p>
+        <div class="content">
+            {{ content }}
+        </div>
+    </div>
+   
+</body>

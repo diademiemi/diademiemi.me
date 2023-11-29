@@ -1,0 +1,80 @@
+---
+---
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center; /* This will vertically center all content */
+}
+
+.no-posts {
+    text-align: center;
+    color: #aaaaff; /* Or any color that fits your design */
+    font-size: 1em; /* Adjust as needed */
+}
+
+
+/* projects.css */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* If you want a specific background for the container, set it here */
+    /* Otherwise, you can remove this line if it should be transparent or inherit the page's background */
+}
+
+.projects-post-link {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherit text color */
+    width: calc(30% - 14px); /* Adjust width to account for margin */
+    margin: 10px 25px; /* Horizontal needs to subtract the padding on the container */
+    display: block;
+}
+
+.projects-post-card {
+    width: 95%; /* Adjust as needed */
+    background-color: #141418; /* Card background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Drop shadow for cards */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners for the card */
+}
+
+.projects-post-title {
+    background-color: #aaaaff; /* Title background color */
+    color: white; /* Title text color */
+    padding: 8px;
+    margin-top: 0;
+    border-radius: 5px; /* Optional: if you want rounded corners for the title */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 1024px) {
+    .projects-post-link {
+        width: 100%; /* Full width on mobile */
+        margin: 7px 0; /* Only top and bottom margin on mobile */
+    }
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}

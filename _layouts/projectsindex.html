@@ -1,0 +1,37 @@
+---
+layout: base
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}">
+</head>
+<body>
+    <div class="projects-container">
+        {% if paginator.posts.size > 0 %}
+            {% for post in paginator.posts %}
+            <a href="{{ post.url }}" class="projects-post-link">
+                <div class="projects-post-card">
+                    <h2 class="projects-post-title">{{ post.title }}</h2>
+                    <div class="projects-post-content">
+                        <p>{{ post.excerpt }}</p>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        {% else %}
+            <p class="no-posts">No posts available.</p>
+        {% endif %}
+    </div>
+    <!-- Pagination -->
+    <ul class="pagination">
+        {% if paginator.previous_page %}
+        <li><a href="{{ paginator.previous_page_path }}">Previous</a></li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li><a href="{{ paginator.next_page_path }}">Next</a></li>
+        {% endif %}
+    </ul>
+</body>
+</html>

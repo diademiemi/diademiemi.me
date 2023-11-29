@@ -1,5 +1,24 @@
 ---
-layout: default
+layout: base
 ---
 
-{{ content }}
+<!-- _layouts/post.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include shared head content like meta tags, stylesheets, etc. -->
+    <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+    <title>{{ page.title }}</title>
+</head>
+
+<body>
+    <!-- Main Content Area -->
+    <div class="post-content container">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-date">{{ page.date | date: "%B %d, %Y" }}</p>
+        {{ content }}
+    </div>
+
+</body>
+
+</html>
