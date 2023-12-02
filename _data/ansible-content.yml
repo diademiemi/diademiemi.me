@@ -74,12 +74,10 @@ ansible_content:
     gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains
     name: diademiemi.jetbrains
     roles:
-    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-android_studio.yml/badge.svg
     - ci_badge: ''
       ci_url: ''
       name: diademiemi.jetbrains.android_studio
       status: Maintained
-    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-clion.yml/badge.svg
     - ci_badge: ''
       ci_url: ''
       name: diademiemi.jetbrains.clion
@@ -89,17 +87,14 @@ ansible_content:
       gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/common
       name: diademiemi.jetbrains.common
       status: Library role
-    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-goland.yml/badge.svg
     - ci_badge: ''
       ci_url: ''
       name: diademiemi.jetbrains.goland
       status: Maintained
-    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-idea.yml/badge.svg
     - ci_badge: ''
       ci_url: ''
       name: diademiemi.jetbrains.idea
       status: Maintained
-    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-pycharm.yml/badge.svg
     - ci_badge: ''
       ci_url: ''
       name: diademiemi.jetbrains.pycharm

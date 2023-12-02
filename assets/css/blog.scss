@@ -37,6 +37,21 @@ html, body {
     font-size: 1em; /* Adjust as needed */
 }
 
+.blog-post-icon {
+    float: right; /* Aligns the icon to the right */
+    width: 25%; /* Takes up 1/3rd of the card width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 50%; /* Maximum height is 2/3rds of the card */
+    margin-left: 10px; /* Space between text and icon */
+}
+
+/* Clear floats after each post card to maintain layout integrity */
+.blog-post-card:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* blog.css */
 .blog-container {
     display: flex;

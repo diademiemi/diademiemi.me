@@ -20,6 +20,9 @@ layout: base
             <a href="{{ post.url }}" class="blog-post-link">
                 <div class="blog-post-card">
                     <h2 class="blog-post-title">{{ post.title }}</h2>
+                    {% if post.icon %}
+                    <img src="{{ post.icon }}" alt="Post Icon" class="blog-post-icon">
+                    {% endif %}
                     <div class="blog-post-content">
                         <p>{{ post.excerpt }}</p>
                     </div>

@@ -11,9 +11,16 @@ layout: base
     <div class="projects-container">
         {% if paginator.posts.size > 0 %}
             {% for post in paginator.posts %}
+            {% if post.override_url %}
+            <a href="{{ post.override_url }}" class="projects-post-link">
+            {% else %}
             <a href="{{ post.url }}" class="projects-post-link">
-                <div class="projects-post-card">
-                    <h2 class="projects-post-title">{{ post.title }}</h2>
+            {% endif %}
+            <div class="projects-post-card">
+                <h2 class="projects-post-title">{{ post.title }}</h2>
+                    {% if post.icon %}
+                    <img src="{{ post.icon }}" alt="Post Icon" class="projects-post-icon">
+                    {% endif %}
                     <div class="projects-post-content">
                         <p>{{ post.excerpt }}</p>
                     </div>
