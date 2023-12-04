@@ -14,8 +14,8 @@
     src: url('../fonts/AgaveNerdFont-Regular.ttf') format('truetype');
 }
 
-
 body {
+    overflow-x: hidden;
     background-color: #202026;
     color: #ccccff;
     font-family: 'Agave', Arial, sans-serif;
@@ -160,6 +160,7 @@ $background: #15151f;
   padding-left: 0.8em;
   padding-right: 0.8em;
   background-color: $background;
+  white-space: pre-wrap; /* Updated property */
 
   .hll {
     background-color: #49483e;
@@ -287,8 +288,11 @@ $background: #15151f;
 
 code{
   background-color: "#282C34";
-  color: whitesmoke;}
+  color: whitesmoke;
+  white-space: pre-wrap; /* Updated property */
+}
 pre {
   background-color: "#282C34";
   color: whitesmoke;
+  white-space: pre-wrap; /* Updated property */
 }

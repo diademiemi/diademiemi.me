@@ -40,12 +40,14 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+
+permalink: pretty
 # collections_dir: collections
 
 collections:
   projects:
     output: true
-    permalink: /projects/:title/
+    permalink: /projects/:path/
   blog:
     output: true
     permalink: /blog/:path/
