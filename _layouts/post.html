@@ -8,6 +8,8 @@ layout: base
 <head>
     <!-- Include shared head content like meta tags, stylesheets, etc. -->
     <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+    <meta name="twitter:description" content="{{ page.excerpt }}" />
+    <meta propety="og:description" content="{{ page.excerpt }}" />
     <title>{{ page.title }}</title>
 </head>
 
