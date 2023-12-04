@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta property="og:site_name" content="diademiemi.me" />
+    <meta property="og:title" content="{{ page.tabtitle | default: site.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://diademiemi.me/" />
+    <meta property="og:image" content="https://diademiemi.me/assets/img/logo.png" />
+    <meta content="#aaaaff" name="theme-color" />
     <title>{{ page.tabtitle | default: site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
