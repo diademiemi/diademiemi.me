@@ -246,7 +246,7 @@ have anything like functions or classes. This means we'll have to be very creati
 Since we don't have functions, we'll probably need a lot of duplicate code. One way to include code from other files is to use the `ansible.builtin.include_tasks` module, which will include the contents of a different task file. This is a bit of a hack, but it works in some cases. Of course, that's only available in between tasks, so we can't use it in the middle of a task! That's a painful limitation, it means our code will be very repetitive and hard to debug.
 
 #### Lack of data structures and types
-Ansible also lacks a lot of data . It has lists, dictionaries, strings, integers bools, and that's about it. This means we'll have to be very creative with how we structure our data. We can't rely on making our own classes or data structures, we'll have to make do with what we have.
+Ansible also lacks a lot of data. It has lists, dictionaries, strings, integers bools, and that's about it. This means we'll have to be very creative with how we structure our data. We can't rely on making our own classes or data structures, we'll have to make do with what we have.
 
 #### Lack of debugging tools
 While I won't lie and say I always take advantage of them, I do love a good debugger. We'll have to do without one! Our only real options are inserting `ansible.builtin.debug` tasks in between other tasks to show the state of variables, or using the `ansible.builtin.fail` task to fail the playbook with a custom message. This is very limited, and it's not a good debugging experience. 
