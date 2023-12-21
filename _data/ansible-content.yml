@@ -74,12 +74,14 @@ ansible_content:
     gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains
     name: diademiemi.jetbrains
     roles:
-    - ci_badge: ''
-      ci_url: ''
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-android_studio.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-android_studio.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/android_studio
       name: diademiemi.jetbrains.android_studio
       status: Maintained
-    - ci_badge: ''
-      ci_url: ''
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-clion.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-clion.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/clion
       name: diademiemi.jetbrains.clion
       status: Maintained
     - ci_badge: ''
@@ -87,16 +89,19 @@ ansible_content:
       gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/common
       name: diademiemi.jetbrains.common
       status: Library role
-    - ci_badge: ''
-      ci_url: ''
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-goland.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-goland.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/goland
       name: diademiemi.jetbrains.goland
       status: Maintained
-    - ci_badge: ''
-      ci_url: ''
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-idea.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-idea.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/idea
       name: diademiemi.jetbrains.idea
       status: Maintained
-    - ci_badge: ''
-      ci_url: ''
+    - ci_badge: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-pycharm.yml/badge.svg
+      ci_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/actions/workflows/ansible-role-pycharm.yml
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.jetbrains/tree/main/roles/pycharm
       name: diademiemi.jetbrains.pycharm
       status: Maintained
     status: Maintained
@@ -138,6 +143,10 @@ ansible_content:
   - galaxy_url: https://galaxy.ansible.com/diademiemi/diademiemi.vm_utils
     gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils
     name: diademiemi.vm_utils
+    playbooks:
+    - name: diademiemi.vm_utils.terraform_vms
+      status: Maintained
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils/blob/main/playbooks/terraform_vms.yml
     roles:
     - ci_badge: ''
       ci_url: ''

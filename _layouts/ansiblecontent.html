@@ -43,6 +43,7 @@ layout: default
             {% endfor %}
         </tbody>
     </table>
+
     <!-- Active Collections -->
     <h2 class="table-h2">Active Collections</h2>
     <table border="1" class="table table-active-collections">
@@ -50,19 +51,29 @@ layout: default
             <tr>
                 <th>Name</th>
                 <th>Status</th>
-                <th>Roles</th>
+                <th>Content</th>
             </tr>
         </thead>
         <tbody>
             {% for collection in site.data.ansible-content.ansible_content.collections %}
             {% unless collection.status contains "Deprecated" %}
-            {% assign role_count = collection.roles | size %}
+            {% assign role_count = collection.roles | default: empty | size %}
+            {% assign playbook_count = collection.playbooks | default: empty | size %}
             {% assign collection_prefix = collection.name | append: '.' %}
-            {% assign rowspan_value = role_count | plus: 1 %}
-                {% if role_count > 0 %}
+            {% assign rowspan_value = role_count | plus: playbook_count | plus: 1 %}
+            {% if playbook_count > 0 %}
+                {% assign rowspan_value = rowspan_value | plus: 1 %}
+            {% endif %}
+            {% if role_count > 0 %}
+                {% assign rowspan_value = rowspan_value | plus: 1 %}
+            {% endif %}
+                {% if role_count > 0 or playbook_count > 0 %}
                 <tr>
                     <td rowspan="{{ rowspan_value }}"><a target="_blank" rel="noopener noreferrer" href="{{ collection.gh_url }}">{{ collection.name }}</a></td>
                     <td rowspan="{{ rowspan_value }}">{{ collection.status }}</td>
+                </tr>
+                <tr>
+                    <td class="content-seperator"><a target="_blank" rel="noopener noreferrer" href="">Roles</a></td>
                 </tr>
                 {% for role in collection.roles %}
                 <tr>
@@ -73,11 +84,21 @@ layout: default
                     {% endif %}
                 </tr>
                 {% endfor %}
+                {% if playbook_count > 0 %}
+                <tr>
+                    <td class="content-seperator"><a target="_blank" rel="noopener noreferrer" href="">Playbooks</a></td>
+                </tr>
+                {% for playbook in collection.playbooks %}
+                <tr>
+                    <td><a target="_blank" rel="noopener noreferrer" href="{{ playbook.gh_url }}">{{ playbook.name | remove: collection_prefix }}</a></td>
+                </tr>
+                {% endfor %}
+                {% endif %}
                 {% else %}
                 <tr>
                     <td><a href="{{ collection.gh_url }}">{{ collection.name }}</a></td>
                     <td>{{ collection.status }}</td>
-                    <td>No roles</td>
+                    <td>No roles or playbooks</td>
                 </tr>
                 {% endif %}
             {% endunless %}
