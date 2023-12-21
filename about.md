@@ -14,7 +14,7 @@ I code in my free time, mostly in Kotlin, Python and misusing Ansible. I have a 
 
 Of course, I also like to play games, my favourite genre is RPGs and anything story-driven that can make me cry. Some of my favourite games include OneShot, Undertale, Deltarune, OMORI, Goodbye Volcano High, Celeste, all the Xenoblade Chronicles games and more!
 
-I also reluctantly play Minecraft, I like it, but hate that I like it too much and spend too much time on learning the internals.
+I also play Minecraft to toy with the internals, and write plugins for Spigot servers! You can find these on my [Projects page](/projects).
 
 You can contact me at my email address, <a href="mailto:emilia@diademiemi.me">emilia@diademiemi.me</a>!
 
