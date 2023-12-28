@@ -144,9 +144,15 @@ ansible_content:
     gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils
     name: diademiemi.vm_utils
     playbooks:
+    - name: diademiemi.vm_utils.terraform_inv_mgt
+      status: Maintained
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils/blob/main/playbooks/terraform_inv_mgt.yml
     - name: diademiemi.vm_utils.terraform_vms
       status: Maintained
       gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils/blob/main/playbooks/terraform_vms.yml
+    - name: diademiemi.vm_utils.terraform_dns
+      status: Maintained
+      gh_url: https://github.com/diademiemi/ansible_collection_diademiemi.vm_utils/blob/main/playbooks/terraform_dns.yml
     roles:
     - ci_badge: ''
       ci_url: ''
