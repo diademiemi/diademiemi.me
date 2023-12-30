@@ -1,6 +1,7 @@
 ---
 ---
 
+
 .main-title {
     font-size: 4em;
     margin-top: 0.5em;
@@ -8,6 +9,9 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Example drop shadow
     // Other styles...
 }
+
+
+@import url('gists.css');
 
 @font-face {
     font-family: 'Agave';
@@ -56,6 +60,12 @@ a:active { /* Styles for links on hover, focus, and active states */
 body, p, li { // General text elements
     font-size: 1.2em; // Increase the general font size by 1.5x
     // ... other styles if needed ...
+}
+
+summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .sidebar-list li a {
