@@ -3,7 +3,7 @@ layout: post
 title:  "Advent of Code in Ansible, The Start"
 date:   2023-12-04 12:00:00 +0100
 tags: [tech]
-tabtitle: diademiemi | AoC 2023 Ansible - The Start
+tabtitle: diademiemi | AoC 2023 Ansible, The Start
 
 ---
 Last year I had the terrible idea of doing AoC in Ansible. After 8 days, I gave up. This year, I'm determined.
